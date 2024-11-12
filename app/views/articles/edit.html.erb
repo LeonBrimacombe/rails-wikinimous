@@ -1,0 +1,9 @@
+<div class="justify-content-md-center shadow p-3 m-4 bg-white rounded">
+  <%= form_with model: @article do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+  <% end %>
+</div>
