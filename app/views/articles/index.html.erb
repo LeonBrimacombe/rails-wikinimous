@@ -1,0 +1,10 @@
+<div class="container">
+  <h3>Articles</h3>
+
+  <% @articles.each do |article|%>
+    <div class="shadow p-3 m-4 bg-light rounded align-items-center">
+      <h5> <%= link_to article.title, article %> </h5> <br>
+      <p> <%= article.content %> </p>
+    </div>
+  <% end %>
+</div>
